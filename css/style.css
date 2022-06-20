@@ -8,19 +8,30 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: normal;
     font-style: normal;
-    color: #121212;
+    color: #343a40;
     font-size: 1rem;
     background-color: #fff;
 }
 
+header,
+section {
+    margin-bottom: 68px;
+
+}
+
+section {
+    display: block;
+}
+
 /* ===== Header CSS ===== */
 .header-area {
-
-    background-color: #f8f9fa;
-    padding: 20px 40px;
+    position: fixed;
+    min-height: 75px;
     display: flex;
     justify-content: space-between;
-
+    width: inherit;
+    background-color: #f8f9fa;
+    padding: 20px 40px;
 
 }
 
@@ -65,4 +76,87 @@ h1 {
 .container {
     width: 960px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 75px;
+    row-gap: 60px;
+    align-items: start;
+}
+
+/* =========  ABOUT   =========== */
+
+.about-container {
+    background-color: #f8f9fa;
+    border: 1px solid #1971c2;
+    padding: 24px;
+    margin-top: 180px;
+    border-radius: 12px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+
+}
+
+.about img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.text {
+    grid-column: 2 / -1;
+    align-self: center;
+    height: 280px;
+    overflow-y: scroll;
+}
+
+h2 {
+    color: #1971c2;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 18px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* ==========   Table section   ========== */
+
+table {
+    display: table;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-color: grey;
+}
+
+.productCode {
+    background-color: #009972;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+
+}
+
+.dataValue {
+    text-align: center;
+
+}
+
+.dataType {
+    background-color: #dedede;
+}
+
+/* ========= ADVANTAGES  =========== */
+
+
+footer {
+    margin-bottom: 48px;
+    font-size: 14px;
+    color: #495057;
 }
