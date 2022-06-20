@@ -79,7 +79,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 75px;
-    row-gap: 60px;
+    row-gap: 30px;
     align-items: start;
 }
 
@@ -153,6 +153,57 @@ table {
 }
 
 /* ========= ADVANTAGES  =========== */
+.advtgs {}
+
+.advtgs li {
+    list-style-type: none;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.icon {
+    width: 24px;
+    color: #1971c2;
+}
+
+.about-container {
+    margin-bottom: 20px;
+}
+
+.video {
+    justify-self: center;
+}
+
+.form {
+    font-size: 20px;
+}
+
+#email {
+    font-size: 20px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.btn--small {
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 4px 10px;
+    color: #fff;
+    font-weight: 500;
+    background-color: #1971c2;
+    border: none;
+}
+
+.btn--small:hover,
+.btn--small:active {
+    background-color: #fff;
+    color: #1971c2;
+    border: 1px solid #1971c2;
+}
 
 
 footer {
